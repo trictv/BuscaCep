@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BuscaCep.pCepEncontrado">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10">
+
+            <Label Text="Detalhes do CEP" FontSize="Large" TextColor="#3498DB" HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout>
+                <Label Text="CEP" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding Cep}" FontSize="Subtitle" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Logradouro" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding Logradouro}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Complemento" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding Complemento}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Bairro" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding Bairro}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Localidade" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding Localidade}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="UF" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding UF}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Código IBGE" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding IBGE}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="GIA" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding GIA}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="DDD" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding Ddd}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Código SIAFI" FontSize="Micro" TextColor="#7F8C8D" HorizontalOptions="Center"/>
+                <Label Text="{Binding Siafi}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <Button Text="Abrir no Google Maps"
+                    x:Name="btnMaps"
+                    Clicked="btnMaps_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="#3498DB"
+                    TextColor="White"
+                    CornerRadius="5"
+                    Margin="0,20,0,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
